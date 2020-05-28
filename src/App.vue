@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/about">About</router-link>
       test build ....
+      ???????????
     </div>
     <router-view />
   </div>
