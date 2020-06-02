@@ -1,15 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/about">About</router-link>
-      test build ....
-      ???????????
-      0125 build test
+      <v-text-field v-model="name" label="이름을 입력하세요"></v-text-field>
+      <div v-if="name=='김대용'" style="height:100px;width:200px;border:1px solid red">평생 백수입니다.</div>
     </div>
     <router-view />
   </div>
 </template>
-
+<script>
+export default {
+  data(){
+    return{
+      name:''
+    }
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
